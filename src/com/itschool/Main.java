@@ -10,8 +10,8 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Fighter figter = new Fighter(10, 2);
-        System.out.println(figter);
+        Fighter fighter = new Fighter(10, 2);
+        System.out.println(fighter);
 
         DocumentWorker documentWorker = new DocumentWorker();
         documentWorker.Open();
