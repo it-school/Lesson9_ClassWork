@@ -2,7 +2,15 @@ package com.itschool.Task2.Interfaces.Classes;
 
 public class Jet extends AbstractPlane
 {
-    int maxDistance;
+    private int maxDistance;
+
+    public int getMaxDistance() {
+        return maxDistance;
+    }
+
+    public void setMaxDistance(int maxDistance) {
+        this.maxDistance = maxDistance;
+    }
 
     @Override
     public int GetPassengersQuantity()
@@ -20,5 +28,14 @@ public class Jet extends AbstractPlane
     public void Move()
     {
         System.out.println("Let's fly to tranfers passengers!");
+    }
+
+    @Override
+    public String toString() {
+        return "Jet{" +
+                "maxDistance=" + maxDistance +
+                ", maxSpeed=" + getMaxSpeed() +
+                ", maxPassengers=" + getPassengers() +
+                '}';
     }
 }
