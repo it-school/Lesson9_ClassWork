@@ -1,4 +1,4 @@
-package com.itschool.Task3.Classes;
+package com.itschool.Task3.Interfaces.Classes;
 
 public class DocumentWorkerExpert extends DocumentWorkerPro
 {

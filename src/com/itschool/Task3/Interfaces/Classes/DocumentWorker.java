@@ -1,6 +1,6 @@
-package com.itschool.Task3.Classes;
+package com.itschool.Task3.Interfaces.Classes;
 
-import com.itschool.Task3.Interfaces.IDocument;
+import com.itschool.Task3.Interfaces.Interfaces.IDocument;
 
 public class DocumentWorker implements IDocument
 {

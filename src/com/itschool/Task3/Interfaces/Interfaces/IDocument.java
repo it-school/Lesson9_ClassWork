@@ -1,4 +1,4 @@
-package com.itschool.Task3.Interfaces;
+package com.itschool.Task3.Interfaces.Interfaces;
 
 public interface IDocument
 {

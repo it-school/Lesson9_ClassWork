@@ -1,17 +1,7 @@
-package com.itschool;
-
-import com.itschool.Task1.*;
-import com.itschool.Task2.Interfaces.Classes.Fighter;
-import com.itschool.Task2.Interfaces.Classes.Jet;
-import com.itschool.Task3.Interfaces.Classes.Document;
-import com.itschool.Task3.Interfaces.Classes.DocumentWorker;
-import com.itschool.Task3.Interfaces.Classes.DocumentWorkerExpert;
-import com.itschool.Task3.Interfaces.Classes.DocumentWorkerPro;
-
-import java.util.Scanner;
+package com.itschool.Task1;
 
 public class Main {
-    public static void task1() {
+    public static void main(String[] args) {
         Pupil pupil = new Pupil("Pupil", 10);
         System.out.println(pupil.study());
         System.out.println(pupil.read());
@@ -64,48 +54,14 @@ public class Main {
         System.out.println(classRoomExtended.pupils[0] instanceof BadPupil);
 
         System.out.println();
-    }
+        int i = 5;
 
-    private static void task2() {
-        Fighter fighter = new Fighter(10, 2);
-        System.out.println(fighter);
-
-        Jet jet = new Jet();
-        jet.setMaxSpeed(900);
-        jet.setPassengers(100);
-        jet.setMaxDistance(2000);
-        System.out.println(jet);
-    }
-
-    private static void task3() {
-        DocumentWorker documentWorker = new DocumentWorker();
-        documentWorker.Open();
-        documentWorker.Edit();
-        documentWorker.Save();
-
-        DocumentWorkerPro documentWorkerPro = new DocumentWorkerPro();
-        documentWorkerPro.Open();
-        documentWorkerPro.Edit();
-        documentWorkerPro.Save();
-
-        DocumentWorkerExpert documentWorkerExpert = new DocumentWorkerExpert();
-        documentWorkerExpert.Open();
-        documentWorkerExpert.Edit();
-        documentWorkerExpert.Save();
-
-        System.out.println("\n Let's test documents. Input registration key:\n\n");
-        Scanner scanner = new Scanner(System.in);
-        String key = scanner.nextLine();
-        Document document = new Document(key);
-
-        document.getDocument().Open();
-        document.getDocument().Edit();
-        document.getDocument().Save();
-    }
-
-    public static void main(String[] args) {
-        task1();
-        task2();
-        task3();
+        Integer integer = new Integer(5);
+        integer = i; // boxing
+        i = integer; // unboxing
+        Double doubleNumber = new Double(5);
+        System.out.println((int) integer == doubleNumber);
+        System.out.println(new Long(integer) instanceof Number);
+        System.out.println(doubleNumber instanceof Number);
     }
 }
